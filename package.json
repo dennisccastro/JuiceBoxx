@@ -1,0 +1,27 @@
+{
+  "name": "JuiceBox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "seed:dev": "nodemon ./db/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennisccastro/Juicebox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dennisccastro/Juicebox/issues"
+  },
+  "homepage": "https://github.com/dennisccastro/Juicebox#readme",
+  "description": ""
+}
