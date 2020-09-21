@@ -64,7 +64,6 @@ async function createTables() {
             UNIQUE ("postId", "tagId")
         )
       `);
-
         console.log("Finished building tables!");
     } catch (error) {
         console.error("Error building tables!");
