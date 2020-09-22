@@ -4,12 +4,16 @@
   "main": "index.js",
   "scripts": {
     "seed:dev": "nodemon ./db/seed.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "pg": "^8.3.3"
   },
   "devDependencies": {
@@ -17,11 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dennisccastro/Juicebox.git"
+    "url": "git+https://github.com/dennisccastro/JuiceBoxx.git"
   },
   "bugs": {
-    "url": "https://github.com/dennisccastro/Juicebox/issues"
+    "url": "https://github.com/dennisccastro/JuiceBoxx/issues"
   },
-  "homepage": "https://github.com/dennisccastro/Juicebox#readme",
+  "homepage": "https://github.com/dennisccastro/JuiceBoxx#readme",
   "description": ""
 }

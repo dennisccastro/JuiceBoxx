@@ -76,22 +76,22 @@ async function createInitialUsers() {
         console.log("Starting to create users...");
 
         await createUser({
-            username: 'albert',
-            password: 'bertie99',
-            name: 'Al Bert',
-            location: 'Sidney, Australia'
+            username: 'dennis',
+            password: 'chillinlikeavillain',
+            name: 'Dennis C. Castro',
+            location: 'San Francisco, CA'
         });
         await createUser({
-            username: 'sandra',
-            password: '2sandy4me',
-            name: 'Just Sandra',
-            location: 'Ain\'t tellin\''
+            username: 'alison',
+            password: 'sweetandsmart',
+            name: 'Alison M. Tuffli',
+            location: 'Seattle, WA'
         });
         await createUser({
-            username: 'glamgal',
-            password: 'soglam',
-            name: 'Joshua',
-            location: 'Upper East Side'
+            username: 'diego',
+            password: 'getoffmylawn',
+            name: 'Diego Angelo Castro',
+            location: 'Manila, Philippines'
         });
 
         console.log("Finished creating users!");
@@ -103,27 +103,27 @@ async function createInitialUsers() {
 
 async function createInitialPosts() {
     try {
-        const [albert, sandra, glamgal] = await getAllUsers();
+        const [dennis, alison, diego] = await getAllUsers();
 
         console.log("Starting to create posts...");
         await createPost({
-            authorId: albert.id,
-            title: "First Post",
-            content: "This is my first post. I hope I love writing blogs as much as I love writing them.",
+            authorId: dennis.id,
+            title: "This class rocks!",
+            content: "I am seeding data now. I am learning so much in this class.",
             tags: ["#happy", "#youcandoanything"]
         });
 
         await createPost({
-            authorId: sandra.id,
-            title: "How does this work?",
-            content: "Seriously, does this even do anything?",
+            authorId: alison.id,
+            title: "Getting less complicated every day",
+            content: "OK, now I've done this. What's next?",
             tags: ["#happy", "#worst-day-ever"]
         });
 
         await createPost({
-            authorId: glamgal.id,
-            title: "Living the Glam Life",
-            content: "Do you even? I swear that half of you are posing.",
+            authorId: diego.id,
+            title: "I am so far away",
+            content: "I am feeling much better today. Just getting over some major illness.",
             tags: ["#happy", "#youcandoanything", "#canmandoeverything"]
         });
         console.log("Finished creating posts!");
@@ -216,8 +216,8 @@ async function testDB() {
         console.log("Result:", updatePostResult);
 
         console.log("Calling getUserById with 1");
-        const albert = await getUserById(1);
-        console.log("Result:", albert);
+        const dennis = await getUserById(1);
+        console.log("Result:", dennis);
 
         console.log("Calling updatePost on posts[1], only updating tags");
         const updatePostTagsResult = await updatePost(posts[0].id, {
