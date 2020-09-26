@@ -21,3 +21,6 @@ server.get('/api', (req, res, next) => {
 
 const apiRouter = require('./api');
 server.use('/api', apiRouter);
+
+require('dotenv').config();
+
